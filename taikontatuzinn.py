@@ -5,6 +5,14 @@ import time
 
 pygame.init()
 
+# --- 音楽再生設定 ---
+pygame.mixer.init()
+pygame.mixer.music.load("Whiteberry.mp3")  # your_song.mp3 を置き換えてください
+pygame.mixer.music.play()
+
+
+
+
 # --- 画面設定 ---
 WIDTH, HEIGHT = 700, 500
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -328,4 +336,3 @@ while running:
 pygame.quit()
 sys.exit()
 
-  
